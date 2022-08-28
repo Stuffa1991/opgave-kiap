@@ -32,6 +32,8 @@ export default {
                 }
             }, { standard: [], praksis: [] });
 
+            console.log(standard, praksis);
+
             chartData.value = {
                 labels: ['Målt BT x 1/år', 'Type 2, BT <= 140/90'],
                 datasets: [
