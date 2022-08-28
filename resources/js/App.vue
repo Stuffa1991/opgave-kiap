@@ -8,8 +8,7 @@ import GraphComponent from './components/GraphComponent.vue'
 export default {
     components: {
         GraphComponent
-    },
-    setup() {}
+    }
 }
 </script>
 
