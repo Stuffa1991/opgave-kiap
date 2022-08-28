@@ -1,13 +1,18 @@
 <template>
-    <div>
-        Test
-    </div>
+  <GraphComponent></GraphComponent>
 </template>
 
-<script setup>
-    
+<script>
+import GraphComponent from './components/GraphComponent.vue'
+
+export default {
+    components: {
+        GraphComponent
+    },
+    setup() {}
+}
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>
