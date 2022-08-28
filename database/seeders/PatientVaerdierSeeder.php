@@ -31,13 +31,5 @@ class PatientVaerdierSeeder extends Seeder
             'standard_vaerdi' => 85,
             'praksis_vaerdi' => 100
         ]);
-
-        PatientVaerdier::create([
-            'slettet' => false,
-            'ydernummer' => '3',
-            'dato' => Carbon::parse('2022-08-21'),
-            'standard_vaerdi' => 84,
-            'praksis_vaerdi' => 97
-        ]);
     }
 }

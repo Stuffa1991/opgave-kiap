@@ -36,9 +36,9 @@ export default {
                 labels: ['Målt BT x 1/år', 'Type 2, BT <= 140/90'],
                 datasets: [
                     {
-                    label: 'Standard',
-                    data: standard,
-                    backgroundColor: 'yellow',
+                        label: 'Standard',
+                        data: standard,
+                        backgroundColor: 'yellow',
                     },
                     {
                         label: 'Praksis',
