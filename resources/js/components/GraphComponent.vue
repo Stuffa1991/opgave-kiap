@@ -1,5 +1,7 @@
 <template>
     <div class="graph__output" v-if="loaded">
+        <h2 class="graph__output-header">1. Hypertension</h2>
+        <p class="graph__output-text">Patientliste <span class="graph__output-dot">i</span></p>
         <BarChart :chartData="chartData" :chartOptions="chartConfig"></BarChart>
     </div>
 </template>
@@ -74,6 +76,27 @@ export default {
 .graph {
     &__output {
         max-width: 800px;
+
+        &-header {
+            font-weight: 700;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        &-text {
+            display: inline-block;
+        }
+
+        &-dot {
+            background: lightgray;
+            border-radius: 50%;
+            width: 20px;
+            text-align: center;
+            display: inline-flex;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 </style>
