@@ -16,7 +16,7 @@ export default {
     setup() {
         const graphStore = useGraphStore();
         const graphData = ref([]);
-        const chartData = ref();
+        const chartData = ref({});
         const loaded = ref(false);
 
         onMounted(async () => {
