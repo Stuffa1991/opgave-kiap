@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('patient_vaerdier', function (Blueprint $table) {
             $table->id();
-            $table->boolean("slettet");
-            $table->string("ydernummer");
-            $table->date("dato");
-            $table->integer("standard_vaerdi");
-            $table->integer("praksis_vaerdi");
+            $table->boolean('slettet');
+            $table->string('ydernummer');
+            $table->date('dato');
+            $table->integer('standard_vaerdi');
+            $table->integer('praksis_vaerdi');
             $table->timestamps();
         });
     }

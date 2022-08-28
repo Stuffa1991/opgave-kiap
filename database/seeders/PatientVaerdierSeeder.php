@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\PatientVaerdier;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class PatientVaerdierSeeder extends Seeder
 {
@@ -14,6 +16,28 @@ class PatientVaerdierSeeder extends Seeder
      */
     public function run()
     {
-        
+        PatientVaerdier::create([
+            'slettet' => false,
+            'ydernummer' => '1',
+            'dato' => Carbon::parse('2022-08-21'),
+            'standard_vaerdi' => 89,
+            'praksis_vaerdi' => 111
+        ]);
+
+        PatientVaerdier::create([
+            'slettet' => false,
+            'ydernummer' => '2',
+            'dato' => Carbon::parse('2022-08-21'),
+            'standard_vaerdi' => 85,
+            'praksis_vaerdi' => 100
+        ]);
+
+        PatientVaerdier::create([
+            'slettet' => false,
+            'ydernummer' => '3',
+            'dato' => Carbon::parse('2022-08-21'),
+            'standard_vaerdi' => 84,
+            'praksis_vaerdi' => 97
+        ]);
     }
 }
